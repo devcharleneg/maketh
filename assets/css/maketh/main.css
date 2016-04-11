@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+  #navbar-search {
+    width: 50% ! important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #navbar-search {
+    width: 80px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #navbar-search {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar-search {
+    width: 420px;
+  }
+}
+
+footer {
+  margin-top: 220px;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
+
+.total-tr > td {
+    vertical-align: text-top !important;
+}
+

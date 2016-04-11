@@ -1,0 +1,24 @@
+.product-list .post-content {
+    text-align: left;
+}
+.product-list .post-meta {
+    text-align: right;
+}
+.product-list .post-content h4 {
+    font-weight: bold;
+    margin: 0;
+}
+.product-list .post-meta .price {
+    font-weight: bold;
+    color: #4BB047;
+}
+.product-list .post-content span {
+    font-weight: bold;
+    color: #6FCAEB;
+}
+
+.productThumb:hover {
+	background: #D0D0EA;
+	opacity: 0.90;
+	cursor: pointer;
+}

@@ -1,0 +1,4 @@
+
+1. change rootDir to / if host will be http://maketh.esy.es/ if not leave it there
+2. change the db config in db.php 
+3. change all /maketh/ to / 
