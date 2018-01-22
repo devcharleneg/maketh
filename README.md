@@ -1,7 +1,6 @@
-## maketh
 Online Shop for Apparels
 
-# Tech Stack:
+## Tech Stack:
 - HTML
 - CSS
 - Javascript
