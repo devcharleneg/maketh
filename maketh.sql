@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `product_image`
 	`product_image` VARCHAR(500),
 	PRIMARY KEY(`product_image_no`),
 	FOREIGN KEY(`item_code`) 
-		REFERENCES Product(`item_code`)
+		REFERENCES `product`(`item_code`)
 			ON DELETE CASCADE
 			ON UPDATE CASCADE
 );
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `orders`
 	`date_ordered` TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	PRIMARY KEY(`order_no`),
 	FOREIGN KEY(`username`) 
-		REFERENCES User(`username`)
+		REFERENCES `user`(`username`)
 			ON DELETE CASCADE
 			ON UPDATE CASCADE
 );
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `ordered_product`
 			ON DELETE CASCADE
 			ON UPDATE CASCADE,
 	FOREIGN KEY(`item_code`) 
-		REFERENCES Product(`item_code`)
+		REFERENCES `product`(`item_code`)
 			ON DELETE CASCADE
 			ON UPDATE CASCADE
 );
@@ -111,7 +111,4 @@ CREATE TABLE IF NOT EXISTS `cart`
 			ON UPDATE CASCADE
 );
 
-
-
-INSERT INTO `user`(`username`,`password`,`address`,`bday`,`email`,`contact_no`,`gender`,`access_type`) VALUES('admin','12345','Bataan','1993-11-05','maketh@gmail.com','09093631900','Male','admin');
-
+INSERT INTO `user` VALUES('admin','password','Cha','Gonzales','T','Bataan','1993-11-05','charlene.gonzles@gmail.com','0977771789','Female','admin')
